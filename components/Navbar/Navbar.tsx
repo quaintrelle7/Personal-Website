@@ -2,10 +2,11 @@ import { Button, Divider, Flex, Link } from '@chakra-ui/react';
 import React, { useState } from 'react';
 
 type NavbarProps = {
+bgColor: any;
 
 };
 
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar: React.FC<NavbarProps> = ({bgColor}) => {
 
     const [showInPhone, setShowInPhone] = useState<Boolean>(false);
 
@@ -14,10 +15,10 @@ const Navbar: React.FC<NavbarProps> = () => {
     }
 
 
-    return <div style={{ position: "sticky", }}>
+    return <div style={{ position: "sticky",top:"0", zIndex:1 }}>
 
 
-        <Flex bg="black"
+        <Flex bg={bgColor}
             height="60px"
             color="white"
 
@@ -68,12 +69,14 @@ const Navbar: React.FC<NavbarProps> = () => {
             </Flex>
         </Flex>
 
-        < Flex display={{ md: "none" }}
-            width={"100%"}>
+        < Flex zIndex={1} display={{ md: "none" }}
+            width={"100%"}
+        >
 
             {showInPhone ? (
 
-                <Flex direction={"column"} align={"center"} width={"100%"} bg="#c2f0e4" padding={"6px"}>
+                <Flex direction={"column"} align={"center"} width={"100%"} bg="#c2f0e4" padding={"6px"} position={"relative"}
+                >
 
                     <Flex padding={"6px"} >
                         <Link className='navbarLink'
@@ -82,9 +85,9 @@ const Navbar: React.FC<NavbarProps> = () => {
 
                     </Flex>
                     <Divider orientation='horizontal' color={"#2db895"} border="0.5px solid" />
-                    <Flex padding={"6px"} >
+                    <Flex padding={"6px"} position={"relative"} zIndex={1}>
                         <Link className='navbarLink'
-                            style={{ textDecoration: "none" }} >Home
+                            style={{ textDecoration: "none" }} >About
                         </Link>
 
                     </Flex>

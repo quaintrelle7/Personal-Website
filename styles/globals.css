@@ -1,3 +1,7 @@
 .navbarLink:hover {
   color: #47d2af;
 }
+
+Input {
+  background-color: "whiteAlpha.300";
+}

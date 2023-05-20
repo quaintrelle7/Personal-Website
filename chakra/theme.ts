@@ -1,14 +1,18 @@
 // 1. Import `extendTheme`
 import { extendTheme } from "@chakra-ui/react";
 import { Button } from "./button";
+import { Input } from "./input";
 
 // 2. Call `extendTheme` and pass your custom values
 export const theme = extendTheme({
   colors: {
     brand: {
-      100: "#FF3c00",
+      100: "#47d2af",
+      200: "#2db895",
+      50: "#70dcc1",
       // ...
-      900: "#1a202c",
+      800: "#0f3d32",
+      900: "#051411",
     },
   },
 
@@ -26,6 +30,6 @@ export const theme = extendTheme({
 
   components: {
     Button,
-  
+    Input,
   },
 });

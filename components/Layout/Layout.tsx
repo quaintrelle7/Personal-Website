@@ -1,11 +1,12 @@
 import React from 'react';
 import Navbar from '../Navbar/Navbar';
 
+
 const Layout: React.FC = ({ children }) => {
 
     return (
         <>
-            <Navbar />
+            <Navbar bgColor={"black"} />
             <main>{children}</main>
         </>
     )
