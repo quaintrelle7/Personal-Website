@@ -11,15 +11,15 @@ const About: React.FC<AboutProps> = () => {
         marginTop: "0px"
     }}>
 
-        <Center bg="#051411" width={"100%"} color={"white"} height={{ sm: "400px", md: "600px", lg: "700px" }}>
+        <Center bg="#051411" width={"100%"} color={"white"} height={{ base: "400px", sm:"400px", md: "600px", lg: "700px" }} px={6}>
 
             <Flex justifyContent={"space-around"}>
                 <Stack>
-                    <Text fontSize={{ sm: "20px", md: "50px", lg: "100px" }}>Hello!</Text>
-                    <Flex fontWeight={700} fontSize={['', '20px', '30px', '40px']} >
+                    <Text fontSize={{ base: "20px", sm:"20px", md: "50px", lg: "100px" }}>Hello!</Text>
+                    <Flex fontWeight={700} fontSize={{base:'20px',md: '30px', lg:'40px'}} >
 
                         <Text> I am </Text>
-                        <Text color="brand.100" marginLeft={['', '1', '3']}>  Sharayu S</Text>
+                        <Text color="brand.100" marginLeft={{base:"1", sm:"1", md: '1' , lg:'3'}}>  Sharayu S</Text>
                     </Flex>
 
                     <Text>Professional Software Developer</Text>

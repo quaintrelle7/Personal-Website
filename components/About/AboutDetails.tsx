@@ -20,14 +20,14 @@ const AboutDetails: React.FC = () => {
 
                     <Box>
 
-                        <Text fontSize={['', '20px', '30px', '40px']} color={"brand.100"} fontWeight={700} align={{ sm: "center", md: "left" }}>About Me</Text>
+                        <Text fontSize={['20px', '20px', '30px', '40px']} color={"brand.100"} fontWeight={700} align={{ sm: "center", base: "center", md: "left" }}>About Me</Text>
                         <Text>Hi!
 
                             I am a passionate blockchain and front-end developer, creating innovative and user-friendly web applications. I have a strong background in Solidity, Ethereum, Web3.js, ReactJS, NextJS, and JavaScript, as well as a keen interest in emerging technologies and trends in the decentralized space.
 
                         </Text>
 
-                        <Text color={"brand.100"} fontWeight={700} align={{ sm: "center", md: "left" }} paddingTop={7}>Skills</Text>
+                        <Text color={"brand.100"} fontWeight={700} align={{ sm: "center", base: "center", md: "left" }} paddingTop={7}>Skills</Text>
 
                         <Skills />
                     </Box>

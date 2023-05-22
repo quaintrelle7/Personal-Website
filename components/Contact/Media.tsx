@@ -14,7 +14,7 @@ const Media: React.FC<MediaProps> = () => {
         <>
             <Flex
             
-                marginBottom={{sm:10, lg:0}} justifyContent={"space-between"} marginTop={{sm:5, lg:12}} width={{ sm: "300px", md: "300px", lg: "300px" }} align={"center"} >
+                marginBottom={{base: 5, sm:10, lg:0}} justifyContent={"space-between"} marginTop={{base: 5, sm:5, lg:12}} width={{base:"250px", sm: "300px", md: "300px", lg: "300px" }} align={"center"} >
                 <Link href='https://www.linkedin.com/in/sharayushendre/' target='_blank'>
 
                     <Icon fontSize={30} color={'brand.100'} borderRadius={'full'} as={AiFillLinkedin} />

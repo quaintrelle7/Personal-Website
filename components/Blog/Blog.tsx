@@ -23,7 +23,7 @@ const Blog: React.FC<BlogProps> = () => {
         <Box bg="black" width={"100%"} color={"white"} height={{ sm: "100%", md: "100%", lg: "800px" }} py={"5vw"} px={"5vw"} >
 
             <Stack align={"center"} >
-                <Text fontSize={['', '20px', '30px', '40px']} color={"brand.100"} fontWeight={700} align={"center"}>Lastest Blogs & Articles</Text>
+                <Text fontSize={['20px', '20px', '30px', '40px']} color={"brand.100"} fontWeight={700} align={"center"}>Lastest Blogs & Articles</Text>
                 <Text>Here are a few blogs I have written. Want to see more? <Link href='https://quaintrelle7.medium.com/' target="_blank" color={"brand.100"}>Visit here.</Link></Text>
                 <Grid templateColumns={{
                     base: 'repeat(1, 1fr)',

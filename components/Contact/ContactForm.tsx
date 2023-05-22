@@ -125,7 +125,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
     return (
         <Box width={{ sm: "70vw", md: "50vw", lg: "30vw" }}>
 
-            <Text fontSize={['', '20px', '30px', '40px']} color={"brand.100"} fontWeight={700} paddingBottom={5}>Get In Touch</Text>
+            <Text align={"center"} fontSize={['20px', '20px', '30px', '40px']} color={"brand.100"} fontWeight={700} paddingBottom={5}>Get In Touch</Text>
 
 
             <form onSubmit={handleSubmitTwo}>

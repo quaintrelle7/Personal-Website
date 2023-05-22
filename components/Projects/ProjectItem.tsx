@@ -17,9 +17,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title, subtitle, description,
 
     return (
 
-        <GridItem height={"200px"} alignItems={"center"} width={{ sm: "70vw", md: "300px", lg: "28vw" }} >
+        <GridItem height={"200px"} alignItems={"center"} width={{ base: "70vw", md: "300px", lg: "28vw" }} >
 
-            <Image width={{ sm: "70vw", md: "300px", lg: "28vw" }} height={"200px"} alt="" position="absolute"
+            <Image width={{ base: "70vw", md: "300px", lg: "28vw" }} height={"200px"} alt="" position="absolute"
                 borderRadius={"15px"}
 
                 src={image as string} />

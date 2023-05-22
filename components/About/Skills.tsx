@@ -8,7 +8,7 @@ type SkillsProps = {
 const Skills: React.FC<SkillsProps> = () => {
 
     const webDevList = ['ReactJS', 'NextJS', 'HTML', 'CSS', 'TypeScript', 'JavaScript', 'Chakra']
-    const langList = ['C++',  'Solidity']
+    const langList = ['C++', 'Solidity']
     const otherList = ['Ethereum', 'Blockchain', 'Outsystems', 'Web3.js', 'Django']
 
     return (
@@ -16,10 +16,10 @@ const Skills: React.FC<SkillsProps> = () => {
 
             <Box>
                 <Grid templateColumns={{
-                    base: 'repeat(3, 1fr)',
+                    base: 'repeat(2, 1fr)',
                     md: 'repeat(3, 1fr)',
                     lg: 'repeat(4, 1fr)'
-                }} gap={{ sm: 6, md: 8, lg: 10 }} py={6} >
+                }} gap={{ base: 6, md: 8, lg: 10 }} py={6} >
 
                     {
                         webDevList.map((item) => (

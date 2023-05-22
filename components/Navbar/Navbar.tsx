@@ -70,7 +70,7 @@ const Navbar: React.FC<NavbarProps> = ({bgColor}) => {
         </Flex>
 
         < Flex zIndex={1} display={{ md: "none" }}
-            width={"100%"}
+            width={"100%"} position={"absolute"}
         >
 
             {showInPhone ? (
