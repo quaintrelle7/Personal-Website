@@ -32,60 +32,60 @@ const ContactForm: React.FC<ContactFormProps> = () => {
     // Validation check method
 
 
-    const handleSubmit = e => {
+    // const handleSubmit = e => {
 
-        e.preventDefault();
-        // let isValidForm = handleValidation();
-        const data = {
-            fullname,
-            email,
-            subject,
-            message,
-        };
-        console.log(data);
+    //     e.preventDefault();
+    //     // let isValidForm = handleValidation();
+    //     const data = {
+    //         fullname,
+    //         email,
+    //         subject,
+    //         message,
+    //     };
+    //     console.log(data);
 
-        // const res = await fetch("/api/sendgrid", {
-        //     body: JSON.stringify({
-        //         email: email,
-        //         fullname: fullname,
-        //         subject: subject,
-        //         message: message,
-        //     }),
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     method: "POST",
-        // });
+    //     // const res = await fetch("/api/sendgrid", {
+    //     //     body: JSON.stringify({
+    //     //         email: email,
+    //     //         fullname: fullname,
+    //     //         subject: subject,
+    //     //         message: message,
+    //     //     }),
+    //     //     headers: {
+    //     //         "Content-Type": "application/json",
+    //     //     },
+    //     //     method: "POST",
+    //     // });
 
-        // setButtonText("Sending");
-        // const res = await fetch("/api/sendgrid", {
-        //     body: JSON.stringify({
-        //         email: email,
-        //         fullname: fullname,
-        //         subject: subject,
-        //         message: message,
-        //     }),
-        //     // headers: {
-        //     //     "Content-Type": "application/json",
-        //     // },
-        //     // method: "POST",
-        // });
+    //     // setButtonText("Sending");
+    //     // const res = await fetch("/api/sendgrid", {
+    //     //     body: JSON.stringify({
+    //     //         email: email,
+    //     //         fullname: fullname,
+    //     //         subject: subject,
+    //     //         message: message,
+    //     //     }),
+    //     //     // headers: {
+    //     //     //     "Content-Type": "application/json",
+    //     //     // },
+    //     //     // method: "POST",
+    //     // });
 
-        // const { error } = await res.json();
-        // if (error) {
-        //     console.log(error);
-        //     setShowSuccessMessage(false);
-        //     setShowFailureMessage(true);
-        //     setButtonText("Send");
-        //     return;
-        // }
-        // setShowSuccessMessage(true);
-        // setShowFailureMessage(false);
-        // setButtonText("Send");
+    //     // const { error } = await res.json();
+    //     // if (error) {
+    //     //     console.log(error);
+    //     //     setShowSuccessMessage(false);
+    //     //     setShowFailureMessage(true);
+    //     //     setButtonText("Send");
+    //     //     return;
+    //     // }
+    //     // setShowSuccessMessage(true);
+    //     // setShowFailureMessage(false);
+    //     // setButtonText("Send");
 
-        // console.log(fullname, email, subject, message);
+    //     // console.log(fullname, email, subject, message);
 
-    }
+    // }
 
     const handleSubmitTwo = async (e: React.FormEvent) => {
         e.preventDefault();
