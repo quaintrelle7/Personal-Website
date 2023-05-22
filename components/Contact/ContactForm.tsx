@@ -13,10 +13,11 @@ type ContactFormProps = {
 
 const ContactForm: React.FC<ContactFormProps> = () => {
 
-    const [fullname, setFullname] = useState("");
-    const [email, setEmail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");
+    const [fullname, setFullname] = useState('');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
 
     //   Form validation state
     const [errors, setErrors] = useState({});
@@ -29,73 +30,105 @@ const ContactForm: React.FC<ContactFormProps> = () => {
     const [showFailureMessage, setShowFailureMessage] = useState(false);
 
     // Validation check method
-    const handleValidation = () => {
-        let tempErrors = {};
-        let isValid = true;
 
-        // if (fullname.length <= 0) {
-        //     tempErrors["fullname"] = true;
-        //     isValid = false;
-        // }
-        // if (email.length <= 0) {
-        //     tempErrors["email"] = true;
-        //     isValid = false;
-        // }
-        // if (subject.length <= 0) {
-        //     tempErrors["subject"] = true;
-        //     isValid = false;
-        // }
-        // if (message.length <= 0) {
-        //     tempErrors["message"] = true;
-        //     isValid = false;
-        // }
 
-        setErrors({ ...tempErrors });
-        console.log("errors", errors);
-        return isValid;
-    };
-
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = e => {
 
         e.preventDefault();
-        let isValidForm = handleValidation();
+        // let isValidForm = handleValidation();
+        const data = {
+            fullname,
+            email,
+            subject,
+            message,
+        };
+        console.log(data);
 
-        if (isValidForm) {
-            setButtonText("Sending");
-            const res = await fetch("/api/sendgrid", {
-                body: JSON.stringify({
-                    email: email,
-                    fullname: fullname,
-                    subject: subject,
-                    message: message,
-                }),
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                method: "POST",
-            });
+        // const res = await fetch("/api/sendgrid", {
+        //     body: JSON.stringify({
+        //         email: email,
+        //         fullname: fullname,
+        //         subject: subject,
+        //         message: message,
+        //     }),
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //     },
+        //     method: "POST",
+        // });
 
-            const { error } = await res.json();
-            if (error) {
-                console.log(error);
-                setShowSuccessMessage(false);
-                setShowFailureMessage(true);
-                setButtonText("Send");
-                return;
-            }
-            setShowSuccessMessage(true);
-            setShowFailureMessage(false);
-            setButtonText("Send");
-        }
-        console.log(fullname, email, subject, message);
+        // setButtonText("Sending");
+        // const res = await fetch("/api/sendgrid", {
+        //     body: JSON.stringify({
+        //         email: email,
+        //         fullname: fullname,
+        //         subject: subject,
+        //         message: message,
+        //     }),
+        //     // headers: {
+        //     //     "Content-Type": "application/json",
+        //     // },
+        //     // method: "POST",
+        // });
+
+        // const { error } = await res.json();
+        // if (error) {
+        //     console.log(error);
+        //     setShowSuccessMessage(false);
+        //     setShowFailureMessage(true);
+        //     setButtonText("Send");
+        //     return;
+        // }
+        // setShowSuccessMessage(true);
+        // setShowFailureMessage(false);
+        // setButtonText("Send");
+
+        // console.log(fullname, email, subject, message);
 
     }
+
+    const handleSubmitTwo = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        // let isValidForm = handleValidation();
+
+        const res = await fetch("/api/sendgrid", {
+            body: JSON.stringify({
+                email: email,
+                fullname: fullname,
+                subject: subject,
+                message: message,
+            }),
+            headers: {
+                "Content-Type": "application/json",
+            },
+            method: "POST",
+        });
+
+        // const data = {
+        //     fullname,
+        //     email,
+        //     subject,
+        //     message,
+        // };
+        // console.log(data);
+
+        const { error } = await res.json();
+        if (error) {
+            console.log(error);
+            return;
+        }
+
+        console.log(fullname, email, subject, message);
+
+    };
     return (
         <Box width={{ sm: "70vw", md: "50vw", lg: "30vw" }}>
-            
+
             <Text fontSize={['', '20px', '30px', '40px']} color={"brand.100"} fontWeight={700} paddingBottom={5}>Get In Touch</Text>
 
-            <FormControl onSubmit={handleSubmit}>
+
+            <form onSubmit={handleSubmitTwo}>
                 <Stack>
 
                     <Flex>  <Stack flexGrow={1}>
@@ -134,11 +167,13 @@ const ContactForm: React.FC<ContactFormProps> = () => {
                         onChange={(e) => {
                             setMessage(e.target.value);
                         }} maxHeight={"250px"} />
-                    <Button bg="teal" onSubmit={handleSubmit}>Send Message</Button>
+
+                    <Button bg="teal" type='submit' >Send Message</Button>
+
                 </Stack>
 
                 {/* <FormHelperText>We'll never share your email.</FormHelperText> */}
-            </FormControl>
+            </form>
         </Box>
     )
 }

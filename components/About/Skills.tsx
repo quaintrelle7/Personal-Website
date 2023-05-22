@@ -18,12 +18,12 @@ const Skills: React.FC<SkillsProps> = () => {
                 <Grid templateColumns={{
                     base: 'repeat(3, 1fr)',
                     md: 'repeat(3, 1fr)',
-                    lg: 'repeat(5, 1fr)'
+                    lg: 'repeat(4, 1fr)'
                 }} gap={{ sm: 6, md: 8, lg: 10 }} py={6} >
 
                     {
                         webDevList.map((item) => (
-                            <GridItem key={item} bg={"brand.100"} color={"black"} borderRadius={5} padding={2} width={"150"} fontWeight={600} align={"center"}>
+                            <GridItem key={item} bg={"brand.100"} color={"black"} borderRadius={5} padding={2} width={"150"} fontWeight={600} textAlign={"center"}>
                                 {item}
                             </GridItem>
                         ))
@@ -31,14 +31,14 @@ const Skills: React.FC<SkillsProps> = () => {
 
                     {
                         langList.map((item) => (
-                            <GridItem key={item} bg={"teal.300"} color={"black"} borderRadius={5} padding={2} width={"150"} fontWeight={600} align={"center"}>
+                            <GridItem key={item} bg={"teal.300"} color={"black"} borderRadius={5} padding={2} width={"150"} fontWeight={600} textAlign={"center"}>
                                 {item}
                             </GridItem>
                         ))
                     }
                     {
                         otherList.map((item) => (
-                            <GridItem key={item} bg={"teal.200"} color={"black"} borderRadius={5} padding={2} width={"150"} fontWeight={600} align={"center"}>
+                            <GridItem key={item} bg={"teal.200"} color={"black"} borderRadius={5} padding={2} width={"150"} fontWeight={600} textAlign={"center"}>
                                 {item}
                             </GridItem>
                         ))

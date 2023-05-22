@@ -16,19 +16,19 @@ const Contact: React.FC<ContactProps> = () => {
             lg: 'repeat(2, 1fr)'
         }} gap={6} bg="#051411" width={"100%"} color={"white"} height={{ sm: "100%", md: "100%", lg: "100%" }} justifyContent={"space-around"} py="5vw" px="5vw">
 
-            <Stack >
-                <Box align="center">
-                    <Info />
+            <Stack alignItems={"center"} >
+               
+                <Box><Info /></Box>
 
-                  
-                    <Media />
-                </Box>
+
+                <Box><Media /></Box>  
+             
 
 
             </Stack>
-            <Box align="center" >
+            <Flex justifyContent={"center"} >
                 <ContactForm />
-            </Box>
+            </Flex>
         </Grid>
 
 

@@ -6,10 +6,16 @@ async function sendEmail(req: any, res: any) {
   try {
     // console.log("REQ.BODY", req.body);
     await sendgrid.send({
-      to: "sharayushendre@kpmg.com", // Your email where you'll receive emails
+      to: "sharayushendre7@gmail.com", // Your email where you'll receive emails
       from: "sharayushendre7@gmail.com", // your website email address here
       subject: `${req.body.subject}`,
-      html: `<div>You've got a mail</div>`,
+      // email: `${req.body.subject}`,
+      // content: `${req.body.message}`,
+
+      html: `<div><h4> Name:  ${req.body.fullname}</h4>
+      <h4>Email:  ${req.body.email}</h4>
+      <br/>
+      ${req.body.message}</div>`,
     });
   } catch (error: any) {
     // console.log(error);
