@@ -20,7 +20,7 @@ const Blog: React.FC<BlogProps> = () => {
 
 
     return (
-        <Box id="Blog" bg="black" width={"100%"} color={"white"} height={{ sm: "100%", md: "100%", lg: "900px" }} py={"5vw"} px={"5vw"} >
+        <Box id="Blog" bg="black" width={"100%"} color={"white"} height={{ sm: "100%", md: "100%", lg: "900px" }} py={{ base: "15vw", lg: "5vw" }} px={"5vw"} >
 
             <Stack align={"center"} >
                 <Text fontSize={['2xl', '30px', '30px', '30px']} color={"brand.100"} fontWeight={700} align={"center"}>Lastest Blogs & Articles</Text>
@@ -37,7 +37,7 @@ const Blog: React.FC<BlogProps> = () => {
 
 
                         {blogs.map(item => (
-                            <BlogItem key={item.title} title = {item.title} image={item.image} link={item.link} desc={item.desc} />
+                            <BlogItem key={item.title} title = {item.title} image={item.image} link={item.link} desc={item.desc} date={item.date} time={item.time} />
 
                         ))}
 

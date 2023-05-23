@@ -7,10 +7,12 @@ type BlogItemProps = {
     link: String,
     desc:
     String,
+    date: String,
+    time: String,
 
 };
 
-const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
+const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc, date, time }) => {
 
     return (
         <Link href={link as string} target="_blank">
@@ -31,7 +33,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
                         mx={-6}
                         mb={6}
                     >
-                        <Image
+                        <Image width={{ base: "80vw", sm: "70vw", md: "300px", lg: "28vw" }} height={300}
                             src={
                                 image as string
                             }
@@ -73,7 +75,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
                     /> */}
                         <Stack direction={'column'} spacing={0} fontSize={'sm'}>
                             <Text fontWeight={600}>Achim Rolle</Text>
-                            <Text color={'gray.500'}>Feb 08, 2021 · 6min read</Text>
+                            <Text color={'gray.500'}>{date} · {time}min read</Text>
                         </Stack>
                     </Stack>
                 </Box>

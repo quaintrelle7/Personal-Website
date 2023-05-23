@@ -13,7 +13,7 @@ const Projects: React.FC<ProjectsProps> = () => {
     
     return (
         <>
-            <Box  id ="Projects" bg="#051411" width={"100%"} color={"white"} height={{ base: "100%", md: "100%", lg: "800px" }} py={"5vw"} px={"5vw"}>
+            <Box id="Projects" bg="#051411" width={"100%"} color={"white"} height={{ base: "100%", md: "100%", lg: "800px" }} py={{ base: "15vw", lg: "5vw" }} px={"5vw"}>
 
                 <Stack align={"center"} >
                     <Text fontSize={['2xl', '30px', '30px', '30px']} color={"brand.100"} fontWeight={700} align={"center"}>My Recent Work</Text>

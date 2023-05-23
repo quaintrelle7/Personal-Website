@@ -9,10 +9,10 @@ const AboutDetails: React.FC = () => {
         <Grid id="AboutDetails" templateColumns={{
             base: 'repeat(1, 1fr)',
             lg: 'repeat(2, 1fr)'
-        }} gap={6} bg="black" width={"100%"} color={"white"} height={{ sm: "100%", md: "100%", lg: "730px" }} justifyContent={"space-around"} py="5vw" px="5vw">
+        }} gap={6} bg="black" width={"100%"} color={"white"} height={{ sm: "100%", md: "100%", lg: "730px" }} justifyContent={"space-around"} px="5vw" py={{ base: "15vw", lg: "5vw" }}>
 
-            <Flex justifyItems={"center"}>
-                <Box>Image</Box>
+            <Flex display={{ base: "none", lg:"block"}} justifyItems={"center"}>
+                <Box >Image</Box>
             </Flex>
 
             <GridItem >

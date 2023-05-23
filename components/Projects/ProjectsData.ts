@@ -6,7 +6,8 @@ export const projects = [
     subtitle: "Solidity | NextJS | Web3Js | Ethereum",
     description:
       "Crowdfunding on Ethereum Blockchain, transparent and reliable ",
-    image: "https://i.ibb.co/QmSZ6zc/Digi-Bloc-for-Blockchain.png" ,
+    image:
+      "https://images.unsplash.com/photo-1639322537231-2f206e06af84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
     link: "https://github.com/quaintrelle7/30-Days-Of-Solidity",
   },
 
@@ -14,7 +15,8 @@ export const projects = [
     title: "Reddit App Clone",
     subtitle: " NextJS/ReactJS | Firebase | Chakra-UI | TypeScript",
     description: "Reddit app clone, full working app like reddit ",
-    image:"https://i.ibb.co/fMfmfW8/Indigo-and-Blue-Modern-Gradient-Doctor-Health-Logo-5.png",
+    image:
+      "https://i.ibb.co/YW3F1Sn/Indigo-and-Blue-Modern-Gradient-Doctor-Health-Logo-8.png",
     link: "https://github.com/quaintrelle7/30-Days-Of-Solidity",
   },
 
@@ -23,15 +25,18 @@ export const projects = [
     subtitle: " NextJS/ReactJS | Solidity | Polygon",
     description:
       "Peer to Peer Electricity Transfer Application using Blockchain ",
-    image:"https://i.ibb.co/J54nyLY/Indigo-and-Blue-Modern-Gradient-Doctor-Health-Logo-3.png",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
+    // "https://cdn.pixabay.com/photo/2019/07/04/18/49/city-4317139_1280.jpg",
     link: "https://github.com/quaintrelle7/30-Days-Of-Solidity",
   },
 
   {
     title: "Personal Portfolio",
     subtitle: "NextJs/ReactJs | Chakra-UI | TypeScript",
-    description: "Swap Cryptocurrencies across Ethereum Blockchain",
-    image:"https://i.ibb.co/ZVZ8fqt/Indigo-and-Blue-Modern-Gradient-Doctor-Health-Logo-6.png",
+    description: "Personal Website",
+    image:
+      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=820&q=80",
     link: "https://github.com/quaintrelle7/Eth-Swap",
   },
   {
@@ -39,7 +44,7 @@ export const projects = [
     subtitle: "Ethereum Blockchain | Truffle",
     description: "An app built for SharUtoken ICO Sale",
     image:
-      "https://i.ibb.co/PWZSqMT/Indigo-and-Blue-Modern-Gradient-Doctor-Health-Logo-7.png",
+      "https://images.unsplash.com/photo-1621501103258-3e135c8c1fda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
     link: "https://github.com/quaintrelle7/SharUTokenSale",
   },
 
@@ -56,8 +61,9 @@ export const projects = [
     title: "Unity game",
     subtitle: "Unity 3D| C#",
     description:
-      "Built a snake game in real world using ARCore (Motion tracking, light estimation, environmental understandings).",
-   image: "https://i.ibb.co/QmSZ6zc/Digi-Bloc-for-Blockchain.png",
+      "Built a galaxy shooter game in real world using ARCore (Motion tracking, light estimation, environmental understandings).",
+    image:
+      "https://images.pexels.com/photos/1987535/pexels-photo-1987535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     link: "https://github.com/quaintrelle7/Unity-game",
   },
 

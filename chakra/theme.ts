@@ -17,7 +17,7 @@ export const theme = extendTheme({
   },
 
   fonts: {
-    body: "Alata, Open Sans, sans-serif",
+    body: "Inter,  sans-serif",
   },
 
   styles: {
