@@ -17,7 +17,7 @@ const ContactForm: React.FC<ContactFormProps> = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState('Hi!');
 
     //   Form validation state
     const [errors, setErrors] = useState({});
@@ -150,7 +150,8 @@ const ContactForm: React.FC<ContactFormProps> = () => {
 
                     <Button bg="teal" type='submit' >{buttonText} Message</Button>
 
-                        <Text>{showSuccessMessage}</Text>
+                    {showSuccessMessage && <Text align={"center"} color={"brand.200"} fontWeight={600}>Message Sent Successfully!</Text>}
+                    {showFailureMessage && <Text align={"center"} color={"red"} fontWeight={400}>Could not deliver the message, please check all the fields and try again!</Text>}
                 </Stack>
 
                 {/* <FormHelperText>We'll never share your email.</FormHelperText> */}

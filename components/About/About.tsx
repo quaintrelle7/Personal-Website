@@ -11,7 +11,7 @@ const About: React.FC<AboutProps> = () => {
         marginTop: "0px"
     }}>
 
-        <Center bg="#051411" width={"100%"} color={"white"} height={{ base: "400px", sm:"400px", md: "600px", lg: "700px" }} px={6}>
+        <Center id="About" bg="#051411" width={"100%"} color={"white"} height={{ base: "400px", sm:"400px", md: "600px", lg: "700px" }} px={6}>
 
             <Flex justifyContent={"space-around"}>
                 <Stack>

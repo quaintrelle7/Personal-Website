@@ -2,10 +2,16 @@
   color: #47d2af;
 }
 
+
+
 Input {
   background-color: "whiteAlpha.300";
 }
 
 .grid-project {
   background-image: url("https://media.geeksforgeeks.org/wp-content/uploads/rk.png");
+}
+
+.navbarLink2:hover {
+  color: #258c72;
 }

@@ -6,7 +6,7 @@ import Skills from './Skills';
 const AboutDetails: React.FC = () => {
 
     return (
-        <Grid templateColumns={{
+        <Grid id="AboutDetails" templateColumns={{
             base: 'repeat(1, 1fr)',
             lg: 'repeat(2, 1fr)'
         }} gap={6} bg="black" width={"100%"} color={"white"} height={{ sm: "100%", md: "100%", lg: "730px" }} justifyContent={"space-around"} py="5vw" px="5vw">

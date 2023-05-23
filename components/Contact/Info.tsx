@@ -1,5 +1,6 @@
-import { Box, Link, Text } from '@chakra-ui/react';
+import { Box, Link, Text, Flex } from '@chakra-ui/react';
 import React from 'react';
+import { BsArrowUpRightSquareFill } from "react-icons/bs"
 
 type InfoProps = {
 
@@ -16,7 +17,7 @@ const Info: React.FC<InfoProps> = () => {
                 <br />
                 <Text align="left">Apart from tech, I love running, reading, writing and dancing and am always open to explore many activities.</Text>
                 <br></br>
-                <Link href="https://www.goodreads.com/user/show/141296416-sharayu-s" target="_blank"> <Text align={"left"}>Ask me for book recommendations. </Text></Link>
+                <Link href="https://www.goodreads.com/user/show/141296416-sharayu-s" target="_blank"> <Text textDecoration={"underline"} align={"left"}>Ask me for book recommendations here. </Text></Link>
             </Box>
 
         </>

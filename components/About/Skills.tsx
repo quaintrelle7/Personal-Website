@@ -8,7 +8,7 @@ type SkillsProps = {
 const Skills: React.FC<SkillsProps> = () => {
 
     const webDevList = ['ReactJS', 'NextJS', 'HTML', 'CSS', 'TypeScript', 'JavaScript', 'Chakra']
-    const langList = ['C++', 'Solidity']
+    const langList = ['C++', 'Solidity', 'PostgreSQL']
     const otherList = ['Ethereum', 'Blockchain', 'Outsystems', 'Web3.js', 'Django']
 
     return (
