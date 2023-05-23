@@ -20,7 +20,7 @@ const Blog: React.FC<BlogProps> = () => {
 
 
     return (
-        <Box id="Blog" bg="black" width={"100%"} color={"white"} height={{ sm: "100%", md: "100%", lg: "800px" }} py={"5vw"} px={"5vw"} >
+        <Box id="Blog" bg="black" width={"100%"} color={"white"} height={{ sm: "100%", md: "100%", lg: "900px" }} py={"5vw"} px={"5vw"} >
 
             <Stack align={"center"} >
                 <Text fontSize={['2xl', '30px', '30px', '30px']} color={"brand.100"} fontWeight={700} align={"center"}>Lastest Blogs & Articles</Text>

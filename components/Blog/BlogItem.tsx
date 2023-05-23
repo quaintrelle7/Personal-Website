@@ -25,7 +25,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
                     overflow={'hidden'}>
 
                     <Box
-                       
+
                         bg={'gray.100'}
                         mt={-6}
                         mx={-6}
@@ -33,7 +33,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
                     >
                         <Image
                             src={
-                               image
+                                image as string
                             }
                             alt='image'
 
@@ -41,7 +41,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
                     </Box>
                     <Stack height={{ sm: "40vw", md: "48vw", lg: "13vw" }}>
                         <Text
-                            
+
                             color={'green.500'}
                             textTransform={'uppercase'}
                             fontWeight={800}
@@ -49,7 +49,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
                             letterSpacing={1.1}>
                             Blog
                         </Text>
-                        
+
                         <Heading
 
                             color={('black')}
@@ -57,10 +57,10 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
                             fontFamily={'body'}>
                             {title}
                         </Heading>
-                        <br/>
+                        <br />
                         <Text style={{
 
-                           
+
                         }} color={'gray.500'}>
                             {desc}
                         </Text>
