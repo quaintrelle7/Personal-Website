@@ -15,7 +15,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
     return (
         <Link href={link as string} target="_blank">
             <Box >
-                <Center py={6} width={{ sm: "70vw", md: "28vw", lg: "28vw" }} > <Box
+                <Center py={6} width={{ base: "80vw", sm: "70vw", md: "300px", lg: "28vw" }} > <Box
 
 
                     bg={"white"}
@@ -25,7 +25,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
                     overflow={'hidden'}>
 
                     <Box
-                        h={'210px'}
+                       
                         bg={'gray.100'}
                         mt={-6}
                         mx={-6}
@@ -41,7 +41,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
                     </Box>
                     <Stack height={{ sm: "40vw", md: "48vw", lg: "13vw" }}>
                         <Text
-                            mt={{ base: "-10px", lg: "30px" }}
+                            
                             color={'green.500'}
                             textTransform={'uppercase'}
                             fontWeight={800}
@@ -60,7 +60,7 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc }) => {
                         <br/>
                         <Text style={{
 
-                            overflowWrap: "break-word"
+                           
                         }} color={'gray.500'}>
                             {desc}
                         </Text>

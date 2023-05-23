@@ -31,66 +31,38 @@ const ContactForm: React.FC<ContactFormProps> = () => {
 
     // Validation check method
 
+    // const handleValidation = () => {
+    //     let tempErrors = {};
+    //     let isValid = true;
 
-    // const handleSubmit = e => {
+    //     if (fullname.length <= 0) {
+    //         tempErrors["fullname"] = true;
+    //         isValid = false;
+    //     }
+    //     if (email.length <= 0) {
+    //         tempErrors["email"] = true;
+    //         isValid = false;
+    //     }
+    //     if (subject.length <= 0) {
+    //         tempErrors["subject"] = true;
+    //         isValid = false;
+    //     }
+    //     if (message.length <= 0) {
+    //         tempErrors["message"] = true;
+    //         isValid = false;
+    //     }
 
-    //     e.preventDefault();
-    //     // let isValidForm = handleValidation();
-    //     const data = {
-    //         fullname,
-    //         email,
-    //         subject,
-    //         message,
-    //     };
-    //     console.log(data);
+    //     setErrors({ ...tempErrors });
+    //     console.log("errors", errors);
+    //     return isValid;
+    // };
 
-    //     // const res = await fetch("/api/sendgrid", {
-    //     //     body: JSON.stringify({
-    //     //         email: email,
-    //     //         fullname: fullname,
-    //     //         subject: subject,
-    //     //         message: message,
-    //     //     }),
-    //     //     headers: {
-    //     //         "Content-Type": "application/json",
-    //     //     },
-    //     //     method: "POST",
-    //     // });
-
-    //     // setButtonText("Sending");
-    //     // const res = await fetch("/api/sendgrid", {
-    //     //     body: JSON.stringify({
-    //     //         email: email,
-    //     //         fullname: fullname,
-    //     //         subject: subject,
-    //     //         message: message,
-    //     //     }),
-    //     //     // headers: {
-    //     //     //     "Content-Type": "application/json",
-    //     //     // },
-    //     //     // method: "POST",
-    //     // });
-
-    //     // const { error } = await res.json();
-    //     // if (error) {
-    //     //     console.log(error);
-    //     //     setShowSuccessMessage(false);
-    //     //     setShowFailureMessage(true);
-    //     //     setButtonText("Send");
-    //     //     return;
-    //     // }
-    //     // setShowSuccessMessage(true);
-    //     // setShowFailureMessage(false);
-    //     // setButtonText("Send");
-
-    //     // console.log(fullname, email, subject, message);
-
-    // }
 
     const handleSubmitTwo = async (e: React.FormEvent) => {
         e.preventDefault();
 
         // let isValidForm = handleValidation();
+        setButtonText("Sending");
 
         const res = await fetch("/api/sendgrid", {
             body: JSON.stringify({
@@ -105,27 +77,35 @@ const ContactForm: React.FC<ContactFormProps> = () => {
             method: "POST",
         });
 
-        // const data = {
-        //     fullname,
-        //     email,
-        //     subject,
-        //     message,
-        // };
-        // console.log(data);
+
 
         const { error } = await res.json();
+
+
         if (error) {
             console.log(error);
+            setShowSuccessMessage(false);
+            setShowFailureMessage(true);
+            setButtonText("Send");
             return;
         }
+
+        setShowSuccessMessage(true);
+        setShowFailureMessage(false);
+        setEmail("");
+        setFullname("");
+        setSubject("");
+        setMessage("");
+        setButtonText("Send");
+
 
         console.log(fullname, email, subject, message);
 
     };
     return (
-        <Box width={{ sm: "70vw", md: "50vw", lg: "30vw" }}>
+        <Box width={{ base: "80vw", sm: "70vw", md: "300px", lg: "28vw" }}>
 
-            <Text align={"center"} fontSize={['20px', '20px', '30px', '40px']} color={"brand.100"} fontWeight={700} paddingBottom={5}>Get In Touch</Text>
+            <Text align={"center"} fontSize={['2xl', '30px', '30px', '30px']} color={"brand.100"} fontWeight={700} paddingBottom={5}>Get In Touch</Text>
 
 
             <form onSubmit={handleSubmitTwo}>
@@ -168,8 +148,9 @@ const ContactForm: React.FC<ContactFormProps> = () => {
                             setMessage(e.target.value);
                         }} maxHeight={"250px"} />
 
-                    <Button bg="teal" type='submit' >Send Message</Button>
+                    <Button bg="teal" type='submit' >{buttonText} Message</Button>
 
+                        <Text>{showSuccessMessage}</Text>
                 </Stack>
 
                 {/* <FormHelperText>We'll never share your email.</FormHelperText> */}

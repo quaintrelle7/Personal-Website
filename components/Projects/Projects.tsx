@@ -23,8 +23,9 @@ const Projects: React.FC<ProjectsProps> = () => {
             <Box bg="#051411" width={"100%"} color={"white"} height={{ base: "100%", md: "100%", lg: "800px" }} py={"5vw"} px={"5vw"}>
 
                 <Stack align={"center"} >
-                    <Text fontSize={['20px', '20px', '30px', '40px']} color={"brand.100"} fontWeight={700} align={"center"}>My Recent Work</Text>
+                    <Text fontSize={['2xl', '30px', '30px', '30px']} color={"brand.100"} fontWeight={700} align={"center"}>My Recent Work</Text>
                     <Text>Here are a few past design projects I have worked on. Want to see more? <Link href='https://github.com/quaintrelle7' target="_blank" color={"brand.100"}>Visit Github. </Link></Text>
+                    
                     <Grid templateColumns={{
                         base: 'repeat(1, 1fr)',
                         md: 'repeat(2, 1fr)',

@@ -17,6 +17,7 @@ const Skills: React.FC<SkillsProps> = () => {
             <Box>
                 <Grid templateColumns={{
                     base: 'repeat(2, 1fr)',
+                    sm: 'repeat(3, 1fr)',
                     md: 'repeat(3, 1fr)',
                     lg: 'repeat(4, 1fr)'
                 }} gap={{ base: 6, md: 8, lg: 10 }} py={6} >

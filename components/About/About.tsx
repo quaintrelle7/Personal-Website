@@ -15,8 +15,9 @@ const About: React.FC<AboutProps> = () => {
 
             <Flex justifyContent={"space-around"}>
                 <Stack>
-                    <Text fontSize={{ base: "20px", sm:"20px", md: "50px", lg: "100px" }}>Hello!</Text>
-                    <Flex fontWeight={700} fontSize={{base:'20px',md: '30px', lg:'40px'}} >
+                    <Text fontSize={{ base: "3xl", sm:"3xl", md: "50px", lg: "100px" }}>Hello!</Text>
+
+                    <Flex fontWeight={700} fontSize={{base:'2xl',md: '30px', lg:'40px'}} >
 
                         <Text> I am </Text>
                         <Text color="brand.100" marginLeft={{base:"1", sm:"1", md: '1' , lg:'3'}}>  Sharayu S</Text>

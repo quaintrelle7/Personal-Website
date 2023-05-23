@@ -9,8 +9,8 @@ const Info: React.FC<InfoProps> = () => {
 
     return (
         <>
-            <Box width={{ sm: "300px", md: "300px", lg: "400px" }} fontSize={{ base: "15px" , sm: "15px", md: "17px", lg: "18px" }}>
-                <Text align={"center"} fontSize={['20px', '20px', '30px', '40px']} color={"brand.100"} fontWeight={700} paddingBottom={5}>Say Hello!</Text>
+            <Box width={{ base: "270px", sm: "300px", md: "300px", lg: "400px" }} fontSize={{ base: "15px" , sm: "15px", md: "17px", lg: "18px" }}>
+                <Text align={"center"} fontSize={['2xl', '30px', '30px', '30px']} color={"brand.100"} fontWeight={700} paddingBottom={5}>Say Hello!</Text>
 
                 <Text align="left">I am based out of Bengaluru, India. Feel free to reach out to me for any hackathon or project collaboration. </Text>
                 <br />
