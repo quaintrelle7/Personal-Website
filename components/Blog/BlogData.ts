@@ -21,7 +21,7 @@ export const blogs = [
   {
     title: "Reading Challenge",
     link: "https://quaintrelle7.blogspot.com/2021/12/28-2021-today-i-completed-target-of.html",
-    desc: "A book does not change you, a paragraph does, and sometimes a sentence does. Maybe that's why I love books. You always love someone who doesn't judge you irrespective of your flaws and keep showering love on you. ",
+    desc: "A book does not change you, a paragraph does, and sometimes a sentence does. Maybe that's why I love books. You always love someone who doesn't judge you irrespective of your flaws and keeps showering love on you. ",
     image:
       "https://blogger.googleusercontent.com/img/a/AVvXsEjumxg6aaVhLqnm33nz5nKkORPxfIXuGoQVEURzPI1eGwwwzuQQkQAtMjwA9Pw1jBk-8FM56qYa2K6zBMfmbqBeJYJNrU4R8Z0rMBrBq3nxwRYTc9wo28AfmkGQdAFJ0zkVRSvF1mXTyveqMoQ9445WAFm703bG1HhHdJG4rfdmJBKYp5iArUL3zQjIZA=s1280",
     date: "Dec 28, 2021",
