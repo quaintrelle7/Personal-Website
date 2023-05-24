@@ -15,7 +15,8 @@ const Info: React.FC<InfoProps> = () => {
 
                 <Text align="left">I am based out of Bengaluru, India. Feel free to reach out to me for any hackathon or project collaboration. </Text>
                 <br />
-                <Text align="left">Apart from tech, I love running, reading, writing and dancing and am always open to explore many activities.</Text>
+                <Text align="left"> I love running, reading, writing, dancing and love to explore new places.  </Text>
+                <br></br>
                 <br></br>
                 <Link href="https://www.goodreads.com/user/show/141296416-sharayu-s" target="_blank"> <Text textDecoration={"underline"} align={"left"}>Ask me for book recommendations here. </Text></Link>
             </Box>
