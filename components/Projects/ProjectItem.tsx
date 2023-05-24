@@ -18,7 +18,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title, subtitle, description,
     return (
 
         <GridItem height={"200px"} alignItems={"center"} width={{ base: "80vw", sm: "70vw", md: "300px", lg: "28vw" }} borderRadius={"15px"}
-          
+
             boxShadow="0 1.8px 1px #2aaa8a,
   0 2px 2px #2aaa8a,
   0 2px 2px #2aaa8a,
@@ -31,7 +31,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title, subtitle, description,
 
                 src={image as string} />
             <Center width={{ base: "80vw", sm: "70vw", md: "300px", lg: "28vw" }} height={"200px"} position={"absolute"} >
-                <Heading textShadow= "#FC0 1px 0 10px" fontSize={['2xl', '30px', '30px', '30px']} overflowWrap={"break-word"}>{title}</Heading>
+                <Heading textShadow="#FC0 1px 0 10px" fontSize={['2xl', '30px', '30px', '30px']} overflowWrap={"break-word"}>{title}</Heading>
 
             </Center>
 

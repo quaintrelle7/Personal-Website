@@ -1,4 +1,4 @@
-import Background from "../../public/Crowdfund.png"
+import Background from "../../public/Crowdfund.png";
 
 export const projects = [
   {
@@ -17,6 +17,8 @@ export const projects = [
     description: "Reddit app clone, full working app like reddit ",
     image:
       "https://images.unsplash.com/photo-1672908116619-1a23a54c0fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+
+    link: "https://github.com/quaintrelle7/Reddit2.0",
   },
 
   {
