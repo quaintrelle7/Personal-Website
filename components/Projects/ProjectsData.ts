@@ -7,7 +7,7 @@ export const projects = [
     description:
       "Crowdfunding on Ethereum Blockchain, transparent and reliable ",
     image:
-      "https://images.unsplash.com/photo-1639322537231-2f206e06af84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
+      "https://plus.unsplash.com/premium_photo-1674586934147-3b0af76655d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
     link: "https://crowd-fund-quaintrelle.vercel.app/",
   },
 
@@ -16,8 +16,7 @@ export const projects = [
     subtitle: " NextJS/ReactJS | Firebase | Chakra-UI | TypeScript",
     description: "Reddit app clone, full working app like reddit ",
     image:
-      "https://i.ibb.co/YW3F1Sn/Indigo-and-Blue-Modern-Gradient-Doctor-Health-Logo-8.png",
-    link: "https://github.com/quaintrelle7/Reddit2.0",
+      "https://images.unsplash.com/photo-1672908116619-1a23a54c0fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
   },
 
   {
@@ -26,7 +25,7 @@ export const projects = [
     description:
       "Peer to Peer Electricity Transfer Application using Blockchain ",
     image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
+      "https://images.unsplash.com/photo-1644088379091-d574269d422f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1093&q=80",
     // "https://cdn.pixabay.com/photo/2019/07/04/18/49/city-4317139_1280.jpg",
     link: "https://p2-p-electricity-transfer.vercel.app/",
   },
@@ -36,7 +35,8 @@ export const projects = [
     subtitle: "NextJs/ReactJs | Chakra-UI | TypeScript",
     description: "Personal Website",
     image:
-      "https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=820&q=80",
+      "https://plus.unsplash.com/premium_photo-1673582649008-92259602326e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
+
     link: "https://sharayu.vercel.app/",
   },
   {
@@ -44,7 +44,7 @@ export const projects = [
     subtitle: "Ethereum Blockchain | Truffle",
     description: "An app built for SharUtoken ICO Sale",
     image:
-      "https://images.unsplash.com/photo-1621501103258-3e135c8c1fda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80",
+      "https://plus.unsplash.com/premium_photo-1672910806635-66f220304ddc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
     link: "https://github.com/quaintrelle7/SharUTokenSale",
   },
 
@@ -63,7 +63,7 @@ export const projects = [
     description:
       "Built a galaxy shooter game in real world using ARCore (Motion tracking, light estimation, environmental understandings).",
     image:
-      "https://images.pexels.com/photos/1987535/pexels-photo-1987535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "https://images.unsplash.com/photo-1672170583765-d1f6a84b9670?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80",
     link: "https://github.com/quaintrelle7/Unity-game",
   },
 

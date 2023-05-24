@@ -17,16 +17,23 @@ const BlogItem: React.FC<BlogItemProps> = ({ title, image, link, desc, date, tim
     return (
         <Link href={link as string} target="_blank">
             <Box >
-                <Center py={6} width={{ base: "80vw", sm: "70vw", md: "300px", lg: "28vw" }} > <Box
+                <Center py={6} width={{ base: "80vw", sm: "70vw", md: "300px", lg: "28vw" }}  > <Box
+                
+                boxShadow="0 2.8px 10px #2aaa8a,
+  0 2px 2px #2aaa8a,
+  0 2px 2px #2aaa8a,
+  0 0px 6.9px #2aaa8a,
+  0 1.8px 20.4px #2aaa8a,
+  0 2px 1px #2aaa8a" 
 
 
                     bg={"white"}
-                    boxShadow={'2xl'}
+                    // boxShadow={'2xl'}
                     rounded={'md'}
                     p={6}
                     overflow={'hidden'}>
 
-                    <Box
+                    <Box 
 
                         bg={'gray.100'}
                         mt={-6}
