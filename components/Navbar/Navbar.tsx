@@ -55,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor }) => {
                 <Link href="#Projects" className='navbarLink'
                     style={{ textDecoration: "none" }}>Projects
                 </Link>
-                <Link className='navbarLink'
+                <Link target='_blank' href="/ResumeSharayu.pdf" className='navbarLink'
                     style={{ textDecoration: "none" }}>Resume
                 </Link>
                 <Link href='https://quaintrelle7.medium.com/' target="_blank"
@@ -105,14 +105,14 @@ const Navbar: React.FC<NavbarProps> = ({ bgColor }) => {
                     </Flex>
                     <Divider orientation='horizontal' color={"#2db895"} border="0.5px solid" />
                     <Flex padding={"6px"} >
-                        <Link className='navbarLink2'
+                        <Link href='https://quaintrelle7.medium.com/' target="_blank" className='navbarLink2'
                             style={{ textDecoration: "none" }} >Blog
                         </Link>
 
                     </Flex>
                     <Divider orientation='horizontal' color={"#2db895"} border="0.5px solid" />
                     <Flex padding={"6px"} >
-                        <Link className='navbarLink2'
+                        <Link target='_blanck' href="/ResumeSharayu.pdf" className='navbarLink2'
                             style={{ textDecoration: "none" }} >Resume
                         </Link>
 

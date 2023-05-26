@@ -11,8 +11,8 @@ const AboutDetails: React.FC = () => {
             lg: 'repeat(2, 1fr)'
         }} gap={6} bg="black" width={"100%"} color={"white"} height={{ sm: "100%", md: "100%", lg: "730px" }} justifyContent={"space-around"} px="5vw" py={{ base: "15vw", lg: "5vw" }}>
 
-            <Flex display={{ base: "none", lg:"block"}} justifyItems={"center"}>
-                <Box >Image</Box>
+            <Flex mt={100}  display={{ base: "none", lg:"block"}} justifyItems={"center"}>
+                <Image width={"600px"} borderRadius={10} src="https://images.unsplash.com/photo-1555066931-bf19f8fd1085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt ="laptop image"></Image>
             </Flex>
 
             <GridItem >
